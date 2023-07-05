@@ -1,12 +1,14 @@
-<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <title>World Humanitarian Day is coming soon</title>
   <meta name="description" content="The campaign site for the World Humanitarian Day">
-  <meta name="author" content="Office for the Coordination of Humanitarian Affairs">
+  <meta name="author" content="United Nations Office for the Coordination of Humanitarian Affairs">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
   <!-- Google Tag Manager -->
   <script>
@@ -23,63 +25,46 @@
   </script>
   <!-- End Google Tag Manager -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
-
   <style type="text/css">
-	  html {
-		  /* background: url('coming-soon.jpg') no-repeat center center fixed;
-		  -webkit-background-size: contain;
-		  -moz-background-size: contain;
-		  -o-background-size: contain;
-		  background-size: contain; */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
     }
 
     body {
-      font-family: "Montserrat", sans-serif;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 16px;
       text-align: center;
-      font-size: 24px;
-      margin: 0;
-    }
-
-    .content {
+      max-width: 760px;
       padding: 1rem;
+      margin: 0 auto;
+      background: #eee;
     }
 
-    .page-title {
-      text-transform: uppercase;
-      font-size: 2.25rem;
-      font-weight: 900;
+    main {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    h1 {
       margin: 0.5rem 0 1rem;
+      font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+      font-weight: 900;
+      text-transform: uppercase;
     }
 
-    .date {
+    time {
+      font-size: clamp(1.4rem, 3.2vw, 2rem);
       font-weight: 900;
     }
 
     img {
-      max-height: 50vh;
+      order: -1;
     }
 
-    p {
-      margin: 1rem 0 0;
-    }
-
-    @media screen and (min-width: 1024px) {
-      .page-title {
-        text-transform: uppercase;
-        font-size: 3rem;
-        font-weight: 900;
-      }
-
-      .date {
-        font-size: 2rem;
-      }
-    }
-
-    @media screen and (min-width: 1024px) {
-      img {
-        max-height: 70vh;
-      }
+    p + p {
+      margin-block-start: 1rem;
     }
   </style>
 </head>
@@ -90,17 +75,22 @@
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <div class="content">
+  <main aria-label="Page content">
+    <h1>World Humanitarian Day</h1>
+    <time datetime="2023-08-19" class="date">19 August 2023</time>
+    <img src="img/2023@640.jpg"
+      srcset="img/2023@640.jpg 640w, img/2023@1000.jpg 1000w"
+      sizes="(min-width: 792px) calc(760px - 2rem), 100vw"
+      alt="Three children holding their hands in the shape of a heart. The hashtag 'no matter what' is overlaid.">
 
-    <img src="coming-soon.jpg" alt="Colourful illustration for World Humanitarian Day">
-
-    <h1 class="page-title">World Humanitarian Day</h1>
-
-    <div class="date">19 August 2022</div>
-
-    <p><strong>#ItTakesAVillage</strong> campaign launch coming soon</p>
-
-  </div>
-
+    <p>On 19 August 2003, we lost 22 colleagues in an attack on the United Nations in Baghdad, Iraq. The tragedy profoundly changed the way in which humanitarians operate – from being respected to being targeted – and led to the creation of World Humanitarian Day (WHD).</p>
+    <p>Today, 20 years on, our work has grown in scale and complexity. We aim to help almost 250 million people – eight times more than in 2003. As our efforts have grown, so too have the challenges we face. From rising geopolitical tensions and the blatant disregard of international humanitarian law, to deliberate attacks and disinformation campaigns, our work is more difficult and dangerous. The values and principles that guide it are under threat.</p>
+    <p>Amidst these trials, we have grown stronger and are closer to the men, women and children we serve. We have made mistakes and we keep learning. But we have no other purpose than saving and protecting lives and delivering the basics of life - food, water, shelter, education, health, nutrition and protection.</p>
+    <p>We won’t compromise on our principles of humanity, impartiality, neutrality and independence. This year, for WHD, we will show that we stand shoulder to shoulder with the communities we serve, no matter who, no matter where, and #NoMatterWhat.</p>
+    <p>Materials for the 2023 WHD campaign will become available here from <strong>7 August 2023</strong>.</p>
+  </main>
+  <footer aria-label="Site">
+    <p><strong>World Humanitarian Day</strong> is a campaign by the United Nations Office for the Coordination of Humanitarian Affairs (OCHA).</p>
+  </footer>
 </body>
 </html>
