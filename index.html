@@ -48,7 +48,8 @@
     }
 
     h1 {
-      margin: 0.5rem 0 1rem;
+      margin: 0;
+      margin-block-start: 1em;
       font-size: clamp(1.8rem, 4.5vw, 2.8rem);
       font-weight: 900;
       text-transform: uppercase;
@@ -59,12 +60,38 @@
       font-weight: 900;
     }
 
-    img {
+    figure {
+      max-width: 100%;
       order: -1;
+      margin: 0;
+      padding: 0;
     }
 
-    p + p {
+    figcaption {
+      opacity: .75;
+      font-style: italic;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    p {
+      margin: 0;
+      text-wrap: balance;
+    }
+
+    main > * + * {
       margin-block-start: 1rem;
+    }
+
+    footer {
+      margin-block-start: 1rem;
+      border-block-start: 1px solid #ccc;
+      padding-block-start: 1rem;
+      padding-block-end: 8rem;
     }
   </style>
 </head>
@@ -78,19 +105,24 @@
   <main aria-label="Page content">
     <h1>World Humanitarian Day</h1>
     <time datetime="2023-08-19" class="date">19 August 2023</time>
-    <img src="img/2023@640.jpg"
-      srcset="img/2023@640.jpg 640w, img/2023@1000.jpg 1000w"
-      sizes="(min-width: 792px) calc(760px - 2rem), 100vw"
-      alt="Three children holding their hands in the shape of a heart. The hashtag 'no matter what' is overlaid.">
+    <figure>
+      <img src="img/2023@1407.jpg"
+        srcset="img/2023@1407.jpg 1407w, img/2023@2814.jpg 2814w"
+        sizes="(min-width: 792px) calc(760px - 2rem), 100vw"
+        alt="Three children holding their hands in the shape of a heart. The World Humanitarian Day logo, and a hashtag 'no matter what' is next to the photo.">
+      <figcaption>Photo: UNOCHA / Ali Haj Suleiman</figcaption>
+    </figure>
 
-    <p>On 19 August 2003, we lost 22 colleagues in an attack on the United Nations in Baghdad, Iraq. The tragedy profoundly changed the way in which humanitarians operate – from being respected to being targeted – and led to the creation of World Humanitarian Day (WHD).</p>
-    <p>Today, 20 years on, our work has grown in scale and complexity. We aim to help almost 250 million people – eight times more than in 2003. As our efforts have grown, so too have the challenges we face. From rising geopolitical tensions and the blatant disregard of international humanitarian law, to deliberate attacks and disinformation campaigns, our work is more difficult and dangerous. The values and principles that guide it are under threat.</p>
-    <p>Amidst these trials, we have grown stronger and are closer to the men, women and children we serve. We have made mistakes and we keep learning. But we have no other purpose than saving and protecting lives and delivering the basics of life - food, water, shelter, education, health, nutrition and protection.</p>
-    <p>We won’t compromise on our principles of humanity, impartiality, neutrality and independence. This year, for WHD, we will show that we stand shoulder to shoulder with the communities we serve, no matter who, no matter where, and #NoMatterWhat.</p>
-    <p>Materials for the 2023 WHD campaign will become available here from <strong>7 August 2023</strong>.</p>
+    <p>On 19 August 2003, we lost 22 colleagues in an attack on the United Nations in Baghdad, Iraq. The tragedy profoundly changed the way in which humanitarians operate – from being respected, to being targeted.</p>
+    <p>Today, 20 years on, our work has grown in scale and complexity. We aim to help almost 250 million people – 10 times more people than in 2003. We have tried to keep pace, and our operations now require almost US$55 billion – also a tenfold increase.</p>
+    <p>As our efforts have grown, so too have the challenges we face. From rising geopolitical tensions and the blatant disregard of international humanitarian law, to deliberate attacks and disinformation campaigns, our work is more difficult and dangerous than ever. The values and principles that guide us are under threat.</p>
+    <p>Amid these trials we have grown stronger, and we are closer to the women, men and children we serve. We have made mistakes and we keep learning, striving to support and empower communities as they recover.</p>
+    <p>We venture deep into disaster-stricken regions and closer to the front lines of conflict. But we have no other purpose than saving and protecting lives and delivering the basics of life: food, water, shelter, education, health, nutrition and protection.</p>
+    <p>We won’t compromise on our principles of humanity, impartiality, neutrality and independence. We are determined to deliver and stand shoulder to shoulder with the communities we serve, no matter who, no matter where and #NoMatterWhat.</p>
+    <p>Material for the 2023 WHD campaign will become available here from 7 August on.</p>
   </main>
   <footer aria-label="Site">
-    <p><strong>World Humanitarian Day</strong> is a campaign by the United Nations Office for the Coordination of Humanitarian Affairs (OCHA).</p>
+    <p>WHD is a campaign by the United Nations Office for the Coordination of Humanitarian Affairs (OCHA).</p>
   </footer>
 </body>
 </html>
