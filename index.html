@@ -39,7 +39,6 @@
       max-width: 760px;
       padding: 1rem;
       margin: 0 auto;
-      background: #eee;
     }
 
     main {
@@ -93,6 +92,15 @@
       padding-block-start: 1rem;
       padding-block-end: 8rem;
     }
+
+    .visually-hidden {
+      position: absolute !important;
+      overflow: hidden;
+      clip: rect(1px,1px,1px,1px);
+      width: 1px;
+      height: 1px;
+      word-wrap: normal;
+    }
   </style>
 </head>
 <body>
@@ -110,7 +118,7 @@
         srcset="img/2023@1407.jpg 1407w, img/2023@2814.jpg 2814w"
         sizes="(min-width: 792px) calc(760px - 2rem), 100vw"
         alt="Three children holding their hands in the shape of a heart. The World Humanitarian Day logo, and a hashtag 'no matter what' is next to the photo.">
-      <figcaption>Photo: UNOCHA / Ali Haj Suleiman</figcaption>
+      <figcaption class="visually-hidden">Photo: UNOCHA / Ali Haj Suleiman</figcaption>
     </figure>
 
     <p>On 19 August 2003, we lost 22 colleagues in an attack on the United Nations in Baghdad, Iraq. The tragedy profoundly changed the way in which humanitarians operate – from being respected, to being targeted.</p>
